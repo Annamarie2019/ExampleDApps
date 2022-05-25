@@ -24,33 +24,33 @@ To test each example, run the code with any of its optional params. Then deploy 
 
 ### Call contract
 
-1. To relay a message from source-chain to destination-chain, run
+1. To relay a message from source-chain to destination-chain, run:
 
 `node scripts/test examples/call-contract ${local|testnet} ${source-chain} ${destination-chain} ${message}`
 
 2. Run `yarn call-contract`
 
-3. To deploy the dapp, run
+3. To deploy the dapp, run:
 
 `node scripts/deploy examples/call-contract ${local|testnet}`
 
 ### Call contract with token
 
-1. To send aUSDC from source-chain to destination-chain and distribute it equally among all accounts specified, run
+1. To send aUSDC from source-chain to destination-chain and distribute it equally among all accounts specified, run:
 
 `node scripts/test examples/call-contract-with-token ${local|testnet} ${source-chain} ${destination-chain} ${amount} ${account1} ${account2}...`
 
-2. To deploy the dapp, run
+2. To deploy the dapp, run:
 
 `node scripts/deploy examples/call-contract-with-token ${local|testnet}`
 
 ### Cross chain token
 
-1. To mint some token at source-chain and have it sent to destination-chain, run
+1. To mint some token at source-chain and have it sent to destination-chain, run:
 
 `node scripts/test examples/cross-chain-token ${local|testnet} ${source-chain} ${destination-chain} ${amount}`
 
-2. To deploy the dapp, run
+2. To deploy the dapp, run:
 
 `node scripts/deploy examples/cross-chain-token ${local|testnet}`
 
@@ -58,7 +58,7 @@ To test each example, run the code with any of its optional params. Then deploy 
 
 1. To run on testnet, fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC and replace local with testnet.
 
-2. To send aUSDC from the source to the destination, run
+2. To send aUSDC from the source to the destination, run:
 
 `node scripts/test examples/deposit-address ${local|testnet} ${source-chain} ${destination-chain} ${amount}`
 
@@ -66,23 +66,23 @@ Deposit-address does not need deployment.
 
 ### Headers
 
-1. To inform destination-chain of the last header of source-chain, run 
+1. To inform destination-chain of the last header of source-chain, run:
 
 `node scripts/test examples/headers ${local|testnet} ${source-chain} ${destination-chain}`
 
-2. To deploy the dapp, run
+2. To deploy the dapp, run:
 
 `node scripts/deploy examples/headers ${local|testnet}`
 
 ### NFT linker
 
-1. To send the NFT that was originally minted at source-chain to destination-chain, run 
+1. To send the NFT that was originally minted at source-chain to destination-chain, run:
 
 `node scripts/test examples/nft-linker ${local|testnet} ${source-chain} ${destination-chain}`
 
 You cannot send a duplicate NFT to a chain. The dapp fails when the NFT is already at the destination-chain.
 
-2. To deploy the dapp, run
+2. To deploy the dapp, run:
 
 `node scripts/deploy examples/nft-linker ${local|testnet}`
 
@@ -90,27 +90,27 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 ### Nonced execution
 
-1. To send a message from source-chain to destination-chain, run 
+1. To send a message from source-chain to destination-chain, run: 
 
 `node scripts/test examples/nonced-execution ${local|testnet} ${source-chain} ${destination-chain} ${message}`
 
-2. To deploy the dapp, run
+2. To deploy the dapp, run:
 
 `node scripts/deploy examples/nonced-execution ${local|testnet}`
 
 ### Send ack
 
-1. To send a message from source-chain to destination-chain, run
+1. To send a message from source-chain to destination-chain, run:
 
 `node scripts/test examples/send-ack ${local|testnet} ${source-chain} ${destination-chain} ${message}`
 
-2. To deploy the dapp, run
+2. To deploy the dapp, run:
 
 `node scripts/deploy examples/send-ack ${local|testnet}`
 
 ### Send token
 
-1. To send aUSDC from the source to the destination, run
+1. To send aUSDC from the source to the destination, run:
  
 `node scripts/test examples/send-token ${local|testnet} ${source-chain} ${destination-chain} ${amount}` 
 
