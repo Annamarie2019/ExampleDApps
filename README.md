@@ -15,8 +15,8 @@ To manage your node programs, make sure that you have node.js and npm installed,
 1. Make sure all contracts are compiled by running `npm run build`.
 2. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy your app.
 3. Make sure that the address we use for examples is funded on all five supported testnets. 
-4. Run `node/printBalances`.
-5. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
+   a. Run `node/printBalances`.
+   b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
 ## Test and deploy each example
 
