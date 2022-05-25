@@ -25,9 +25,11 @@ To test each example, run the code with any of its optional params. Then deploy 
 ### Call contract
 
 1. To relay a message from source-chain to destination-chain, run
+
 `node scripts/test examples/call-contract ${local|testnet} ${source-chain} ${destination-chain} ${message}`
 2. Run `yarn call-contract`
 3. To deploy the dapp, run
+
 `node scripts/deploy examples/call-contract ${local|testnet}`
 
 ### Call contract with token
