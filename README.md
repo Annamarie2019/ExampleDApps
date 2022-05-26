@@ -11,12 +11,12 @@ Note: You may see example folders in this repo that are not described below. The
 
 ## Setup
 
-1. To manage your node programs, make sure that you have node.js and npm installed by running `node -v`. If no version is returned, run
+1. You will need to have node.js installed to run these dApps. To make sure that you have it installed, run `node -v`. If no version is returned, run
 `npm update && npm install`.
 
-2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`.
-3. To make sure all contracts are compiled, run `npm run build`.
-4. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps.
+2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`. 
+3. To make sure all contracts are compiled, run `npm run build`. \[Editor: get "Missing script 'build' " error]
+4. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. \[Editor: Get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (for Node axelar-local-gmp-examples/scrips/createLocal), get "Cannot finde @axelar-network/axelar-local-dev module" error]
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
    a. Run `node/printBalances`.
