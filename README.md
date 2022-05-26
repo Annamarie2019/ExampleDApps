@@ -29,7 +29,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
-\[Editor: I'm hoping these will show up as we fix issues above....but what the "five" will need to be clarified.]
+\[Editor: I'm hoping these will show up as we fix issues above....but what the "five" are will need to be clarified.]
 
    a. Run `node/printBalances`. 
 
