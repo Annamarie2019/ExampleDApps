@@ -9,11 +9,11 @@ This repo provides the code for several example dApps in the [Axelar Local Devel
 
 ## Setup
 
-1. To manage your node programs, make sure that you have node.js and npm installed by runnin `node -v`. If no version is returned, run
-`npm update && npm install` or see [Install Node.js Locally with Node Version Manager (nvm)](https://heynode.com/tutorial/install-nodejs-locally-nvm/) for instructions to install it with nvm. NVM allows you to easily switch between versions.
+1. To manage your node programs, make sure that you have node.js and npm installed by running `node -v`. If no version is returned, run
+`npm update && npm install`.
 
 2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`.
-3. To make sure all contracts are compiled, run `npm run [build]`.
+3. To make sure all contracts are compiled, run `npm run build`.
 4. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps.
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
