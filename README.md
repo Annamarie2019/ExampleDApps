@@ -63,7 +63,7 @@ and run the test and deploy.
 
 2. To share your code cross-chain, run `yarn call-contract`. 
 
-\[Editor: Is that the right characterizzation of what yarn is doing? If not, what is it doing and why don't we need one for any of the others?]
+\[Editor: Is that the right characterizzation of what `yarn` is doing? If not, what is it doing and why don't we need one for any of the others? End of questions.]
 
 3. To deploy the dApp, run::
 
