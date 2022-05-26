@@ -7,6 +7,8 @@ This repo provides the code for several example dApps in the [Axelar Local Devel
 - Set up your system.
 - Test and deploy each example.
 
+Note: You may see example folders in this repo that are not described below. They are either placeholders for ideas for the future, such as the `temp` folder, or they are dApps in progress and we'll add a description when they're finished.
+
 ## Setup
 
 1. To manage your node programs, make sure that you have node.js and npm installed by running `node -v`. If no version is returned, run
@@ -23,9 +25,7 @@ This repo provides the code for several example dApps in the [Axelar Local Devel
 
 ## Test and deploy each example
 
-To test and deploy each example, choose `local` or `testnet` and run the code with any of its optional params.
-
-Note: You may see folders in this repo that are not described below. They are either placeholders for ideas for the future, such as the `temp` folder, or they are dApps in progress and we'll add a description when they're finished.
+For each example, enter `local` or `testnet` (for both the test and the deploy steps), the `source-chain` and the `destination-chain`, and variables such as `message`, `amount`, and `account`.
 
 ### Call contract
 
@@ -53,7 +53,7 @@ Note: You may see folders in this repo that are not described below. They are ei
 
 1. To mint some token at source-chain and have it sent to destination-chain, run:
 
-`node scripts/test examples/cross-chain-token [<local|testnet>} ${source-chain} ${destination-chain} ${amount}`
+`node scripts/test examples/cross-chain-token [<local|testnet>] ${source-chain} ${destination-chain} ${amount}`
 
 2. To deploy the dApp, run:
 
