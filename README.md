@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo provides the code for several example dApps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the Solidity code for each example. To try them out:
+This repo provides the code for several example dApps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the smart contract code (.sol files) code for each example. To try them out:
 
 - Set up your system.
 - Test and deploy each example.
