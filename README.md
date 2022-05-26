@@ -49,7 +49,9 @@ For each example, enter:
 
 \[Editor: Such as? What's the correct way to identify each?]
 
-- variables such as `message`, `amount`, and `account` \[Editor: syntax/ "message", whole numbers (what level of token is aUSDC?, how are accounts identified?
+- variables such as `message`, `amount`, and `account` 
+
+- \[Editor: syntax/ "message", whole numbers (what level of token is aUSDC?), how are accounts identified?]
 
 and run the test and deploy.
 
