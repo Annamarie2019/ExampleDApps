@@ -2,19 +2,20 @@
 
 ## Introduction
 
-This repo provides the code for several example dapps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the javascript and the Solidity code for each example. To try running them:
+This repo provides the code for several example dApps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the Solidity code for each example. To try them out:
 
-- Set up your system to run and deploy the dapps.
+- Set up your system.
 - Test and deploy each example.
 
 ## Setup
 
-To manage your node programs, make sure that you have node.js and npm installed, run `node -v`. If you don’t have it, run
-`npm update && npm install`.
+1. To manage your node programs, make sure that you have node.js and npm installed by runnin `node -v`. If no version is returned, run
+`npm update && npm install` or see [Install Node.js Locally with Node Version Manager (nvm)](https://heynode.com/tutorial/install-nodejs-locally-nvm/) to install it with nvm. NVM allows you to easily switch between versions.
 
-1. Make sure all contracts are compiled by running `npm run build`.
-2. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy your app.
-3. Make sure that the address we use for examples is funded on all five supported testnets. 
+2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`.
+3. To make sure all contracts are compiled, run `npm run [build]`.
+4. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps.
+5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
    a. Run `node/printBalances`.
 
@@ -24,7 +25,7 @@ To manage your node programs, make sure that you have node.js and npm installed,
 
 To test and deploy each example, choose `local` or `testnet` and run the code with any of its optional params.
 
-Note: You may see folders in this repo that are not described below. They are either placeholders for ideas for the future, such as the `temp` folder, or they are dapps in progress and a description will come when they're finished.
+Note: You may see folders in this repo that are not described below. They are either placeholders for ideas for the future, such as the `temp` folder, or they are dApps in progress and a description will come when they're finished.
 
 ### Call contract
 
@@ -34,7 +35,7 @@ Note: You may see folders in this repo that are not described below. They are ei
 
 2. Run `yarn call-contract`.
 
-3. To deploy the dapp, run::
+3. To deploy the dApp, run::
 
 `node scripts/deploy examples/call-contract [local|testnet]`
 
@@ -44,7 +45,7 @@ Note: You may see folders in this repo that are not described below. They are ei
 
 `node scripts/test examples/call-contract-with-token [local|testnet] ${source-chain} ${destination-chain} ${amount} ${account1} ${account2}...`
 
-2. To deploy the dapp, run:
+2. To deploy the dApp, run:
 
 `node scripts/deploy examples/call-contract-with-token [local|testnet]`
 
@@ -54,7 +55,7 @@ Note: You may see folders in this repo that are not described below. They are ei
 
 `node scripts/test examples/cross-chain-token [local|testnet} ${source-chain} ${destination-chain} ${amount}`
 
-2. To deploy the dapp, run:
+2. To deploy the dApp, run:
 
 `node scripts/deploy examples/cross-chain-token ${local|testnet]`
 
@@ -74,7 +75,7 @@ Note: You may see folders in this repo that are not described below. They are ei
 
 `node scripts/test examples/headers [local|testnet] ${source-chain} ${destination-chain}`
 
-2. To deploy the dapp, run:
+2. To deploy the dApp, run:
 
 `node scripts/deploy examples/headers [local|testnet]`
 
@@ -84,9 +85,9 @@ Note: You may see folders in this repo that are not described below. They are ei
 
 `node scripts/test examples/nft-linker [local|testnet] ${source-chain} ${destination-chain}`
 
-You cannot send a duplicate NFT to a chain. The dapp fails when the NFT is already at the destination-chain.
+You cannot send a duplicate NFT to a chain. The dApp fails when the NFT is already at the destination-chain.
 
-2. To deploy the dapp, run:
+2. To deploy the dApp, run:
 
 `node scripts/deploy examples/nft-linker [local|testnet]`
 
@@ -98,7 +99,7 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 `node scripts/test examples/nonced-execution [local|testnet] ${source-chain} ${destination-chain} ${message}`
 
-2. To deploy the dapp, run:
+2. To deploy the dApp, run:
 
 `node scripts/deploy examples/nonced-execution [local|testnet]`
 
@@ -108,7 +109,7 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 `node scripts/test examples/send-ack [local|testnet] ${source-chain} ${destination-chain} ${message}`
 
-2. To deploy the dapp, run:
+2. To deploy the dApp, run:
 
 `node scripts/deploy examples/send-ack [local|testnet]`
 
