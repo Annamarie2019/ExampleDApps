@@ -7,11 +7,11 @@ This repo provides the code for several example dApps in the [Axelar Local Devel
 - Set up your system.
 - Test and deploy each example.
 
-Note: You may see example folders in this repo that are not described below. They are either placeholders for ideas for the future, such as the `temp` folder, or they are dApps in progress and we'll add a description when they're finished.
+Note: You may see example folders in this repo that are not described below. They are either placeholders for future apps, such as the `temp` folder, or they are dApps in progress and we'll add a description when they're finished.
 
 ## Setup
 
-1. You will need to have node.js installed to run network dApps. To make sure that you have it installed, run `node -v`. If no version is returned, run
+1. You'll need to have node.js installed to run network dApps. To make sure you have it installed, run `node -v`. If no version is returned, run
 `npm update && npm install`.
 
 2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`. 
@@ -29,7 +29,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
-\[Editor: I'm hoping these will show up as we fix issues above....but what the "five" are will need to be clarified.]
+\[Editor: What are the five supported testnets. Is that explained somewhere?....but what the "five" are will need to be clarified...maybe a link or a selection when they run printBalances?]
 
    a. Run `node/printBalances`. 
 
@@ -47,11 +47,11 @@ For each example, enter:
 
 - `source-chain` and `destination-chain` 
 
-\[Editor: Such as? What's the correct way to identify each?]
+\[Editor: Such as? What's the correct way to identify each? Explained elsewhere? Link?]
 
 - variables such as `message`, `amount`, and `account` 
 
-- \[Editor: What is the expected syntax: message: "message", amount: whole numbers (what level of token is aUSDC? I assume we explain the token (eth stablecoin?) and denominations elsewhere (where?)), account: how are accounts identified?]
+- \[Editor: What is the expected syntax: message: "message", amount: whole numbers (I assume we explain the token (eth stablecoin?) and denominations elsewhere (where?)), account: how are accounts identified?]
 
 and run the test and deploy.
 
