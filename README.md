@@ -51,7 +51,7 @@ For each example, enter:
 
 - variables such as `message`, `amount`, and `account` 
 
-- \[Editor: What is the expected syntax: message: "message"?, amount: whole numbers?, account: how are accounts identified..."string of numbers"?]
+\[Editor: What is the expected syntax: message: "message"?, amount: whole numbers?, account: how are accounts identified..."string of numbers"?]
 
 and run the test and deploy.
 
