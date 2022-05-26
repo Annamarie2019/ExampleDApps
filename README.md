@@ -25,7 +25,13 @@ Note: You may see example folders in this repo that are not described below. The
 
 ## Test and deploy each example
 
-For each example, enter `local` or `testnet` (for both the test and the deploy steps), the `source-chain` and the `destination-chain`, and variables such as `message`, `amount`, and `account`.
+For each example, enter:
+
+- `local` or `testnet` (for both the test and the deploy steps)
+- `source-chain` and `destination-chain`
+- variables such as `message`, `amount`, and `account`
+
+and run the test and deploy.
 
 ### Call contract
 
