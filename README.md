@@ -15,8 +15,8 @@ Note: You may see example folders in this repo that are not described below. The
 `npm update && npm install`.
 
 2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`. 
-3. To make sure all contracts are compiled, run `npm run build`. \[Editor: get "Missing script 'build' " error]
-4. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. \[Editor: Get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scrips/createLocal`), I get "Cannot finde @axelar-network/axelar-local-dev module" error]
+3. To make sure all contracts are compiled, run `npm run build`. \[Editor: I get "Missing script 'build' " error]
+4. On a separate terminal, run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. \[Editor: I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scrips/createLocal`), I get "Cannot finde @axelar-network/axelar-local-dev module" error]
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
    a. Run `node/printBalances`.
