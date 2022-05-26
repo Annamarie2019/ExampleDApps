@@ -21,7 +21,11 @@ Note: You may see example folders in this repo that are not described below. The
 
 4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. 
 
-\[Editor: 1. Do I have that right: we're establishing the user as a node and running a daemon in the background, yes? 2. When I run this code, I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scrips/createLocal`), I get "Cannot find @axelar-network/axelar-local-dev module" error]
+\[Editor: 
+
+1. Do I have that right: we're establishing the user as a node and running a daemon in the background, yes? 
+
+2. When I run this code, I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scrips/createLocal`), I get "Cannot find @axelar-network/axelar-local-dev module" error]
 
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
