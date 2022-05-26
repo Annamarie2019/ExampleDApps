@@ -31,7 +31,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 1. To relay a message from source-chain to destination-chain, run:
 
-`node scripts/test examples/call-contract [<local|testnet>] ${source-chain} ${destination-chain} ${message}`
+`node scripts/test examples/call-contract [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
 2. Run `yarn call-contract`.
 
@@ -43,7 +43,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 1. To send aUSDC from source-chain to destination-chain and distribute it equally among all accounts specified, run:
 
-`node scripts/test examples/call-contract-with-token [<local|testnet>] ${source-chain} ${destination-chain} ${amount} ${account1} ${account2}...`
+`node scripts/test examples/call-contract-with-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>] [<account>] [<account2>]...`
 
 2. To deploy the dApp, run:
 
@@ -53,7 +53,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 1. To mint some token at source-chain and have it sent to destination-chain, run:
 
-`node scripts/test examples/cross-chain-token [<local|testnet>] ${source-chain} ${destination-chain} ${amount}`
+`node scripts/test examples/cross-chain-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
 
 2. To deploy the dApp, run:
 
@@ -65,7 +65,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 2. To send aUSDC from the source to the destination, run:
 
-`node scripts/test examples/deposit-address [<local|testnet>] ${source-chain} ${destination-chain} ${amount}`
+`node scripts/test examples/deposit-address [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
 
 `Deposit-address` is a simple send transaction. There is no smart contract to deploy.
 
@@ -73,7 +73,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 1. To inform destination-chain of the last header of source-chain, run:
 
-`node scripts/test examples/headers [<local|testnet>] ${source-chain} ${destination-chain}`
+`node scripts/test examples/headers [<local|testnet>] [<source-chain>] [<destination-chain>]`
 
 2. To deploy the dApp, run:
 
@@ -83,7 +83,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 1. To send the NFT that was originally minted at source-chain to destination-chain, run:
 
-`node scripts/test examples/nft-linker [<local|testnet>] ${source-chain} ${destination-chain}`
+`node scripts/test examples/nft-linker [<local|testnet>] [<source-chain>] [<destination-chain>]`
 
 You cannot send a duplicate NFT to a chain. The dApp fails when the NFT is already at the destination-chain.
 
@@ -97,7 +97,7 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 1. To send a message from source-chain to destination-chain, run: 
 
-`node scripts/test examples/nonced-execution [<local|testnet>] ${source-chain} ${destination-chain} ${message}`
+`node scripts/test examples/nonced-execution [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
 2. To deploy the dApp, run:
 
@@ -107,7 +107,7 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 1. To send a message from source-chain to destination-chain, run:
 
-`node scripts/test examples/send-ack [<local|testnet>] ${source-chain} ${destination-chain} ${message}`
+`node scripts/test examples/send-ack [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
 2. To deploy the dApp, run:
 
@@ -117,7 +117,7 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 1. To send aUSDC from the source to the destination, run:
  
-`node scripts/test examples/send-token [<local|testnet>] ${source-chain} ${destination-chain} ${amount}` 
+`node scripts/test examples/send-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]` 
 
 2. To run on testnet, fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC and replace local with testnet. 
 
