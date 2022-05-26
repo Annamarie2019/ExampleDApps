@@ -15,11 +15,19 @@ Note: You may see example folders in this repo that are not described below. The
 `npm update && npm install`.
 
 2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`. 
-3. To make sure all contracts are compiled, run `npm run build`. \[Editor: I get "Missing script 'build' " error]
-4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. \[Editor: 1. Do I have that right: we're establishing the user as a node and running a daemon in the background, yes? 2. When I run this code, I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scrips/createLocal`), I get "Cannot find @axelar-network/axelar-local-dev module" error]
-5. Make sure that the address we use for examples is funded on all five supported testnets. \[Eidtor: I'm hoping these will show up as we fix issues above....but what the "five" will need to be clarified.]
+3. To make sure all contracts are compiled, run `npm run build`. 
 
-   a. Run `node/printBalances`. \[Editor: Do you mean `node axelar-local-gmp-examples/scrips/checkBalances`?]
+\[Editor: I get "Missing script 'build' " error]
+4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. 
+
+\[Editor: 1. Do I have that right: we're establishing the user as a node and running a daemon in the background, yes? 2. When I run this code, I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scrips/createLocal`), I get "Cannot find @axelar-network/axelar-local-dev module" error]
+5. Make sure that the address we use for examples is funded on all five supported testnets. 
+
+\[Editor: I'm hoping these will show up as we fix issues above....but what the "five" will need to be clarified.]
+
+   a. Run `node/printBalances`. 
+
+\[Editor: Do you mean `node axelar-local-gmp-examples/scrips/checkBalances`?]
 
    b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
@@ -27,8 +35,12 @@ Note: You may see example folders in this repo that are not described below. The
 
 For each example, enter:
 
-- `local` or `testnet` (for both the test and the deploy steps) \[Editor: Should they run local for everything, except `deposit-address` and `send-token`?]
-- `source-chain` and `destination-chain` \[Editor: Such as? What's the correct way to identify each?]
+- `local` or `testnet` (for both the test and the deploy steps) 
+
+\[Editor: Should they run local for everything, except `deposit-address` and `send-token`?]
+- `source-chain` and `destination-chain` 
+
+\[Editor: Such as? What's the correct way to identify each?]
 - variables such as `message`, `amount`, and `account` \[Editor: syntax/ "message", whole numbers (what level of token is aUSDC?, how are accounts identified?
 
 and run the test and deploy.
@@ -39,7 +51,9 @@ and run the test and deploy.
 
 `node scripts/test examples/call-contract [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
-2. Run `yarn call-contract`. \[Editor: note to self: look up yarn]
+2. Run `yarn call-contract`. 
+
+\[Editor: note to self: look up yarn]
 
 3. To deploy the dApp, run::
 
