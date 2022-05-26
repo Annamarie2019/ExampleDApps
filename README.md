@@ -29,11 +29,11 @@ Note: You may see example folders in this repo that are not described below. The
 
 5. Make sure that the address we use for examples is funded on all five supported testnets. 
 
-\[Editor: What are the five supported testnets. Is that explained somewhere?....but what the "five" are will need to be clarified...maybe a link or a selection when they run printBalances?]
+\[Editor: What are the five supported testnets? Will that be clear when I get the above running?]
 
    a. Run `node/printBalances`. 
 
-\[Editor: Do you mean `node axelar-local-gmp-examples/scripts/checkBalances`? If not, what?]
+\[Editor: Suspicioua syntax. Do you mean `node axelar-local-gmp-examples/scripts/checkBalances`? If not, what?]
 
    b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
@@ -47,11 +47,11 @@ For each example, enter:
 
 - `source-chain` and `destination-chain` 
 
-\[Editor: Such as? What's the correct way to identify each? Explained elsewhere? Link?]
+\[Editor: Such as? What's the correct way to identify each? Explained somewhere?]
 
 - variables such as `message`, `amount`, and `account` 
 
-- \[Editor: What is the expected syntax: message: "message", amount: whole numbers (I assume we explain the token (eth stablecoin?) and denominations elsewhere (where?)), account: how are accounts identified?]
+- \[Editor: What is the expected syntax: message: "message", amount: whole numbers, account: how are accounts identified?]
 
 and run the test and deploy.
 
@@ -61,9 +61,9 @@ and run the test and deploy.
 
 `node scripts/test examples/call-contract [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
-2. Run `yarn call-contract`. 
+2. To share your code cross-chain, run `yarn call-contract`. 
 
-\[Editor: note to self: look up yarn]
+\[Editor: Is that the right characterizzation of what yarn is doing? If not, what is it doing and why don't we need one for any of the others?]
 
 3. To deploy the dApp, run::
 
