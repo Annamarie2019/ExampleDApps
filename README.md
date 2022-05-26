@@ -33,7 +33,7 @@ Note: You may see example folders in this repo that are not described below. The
 
    a. Run `node/printBalances`. 
 
-\[Editor: Do you mean `node axelar-local-gmp-examples/scripts/checkBalances`?]
+\[Editor: Do you mean `node axelar-local-gmp-examples/scripts/checkBalances`? If not, what?]
 
    b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
@@ -43,7 +43,7 @@ For each example, enter:
 
 - `local` or `testnet` (for both the test and the deploy steps) 
 
-\[Editor: Should they run local for everything, except `deposit-address` and `send-token`?]
+\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? If not, what are the criteria?]
 
 - `source-chain` and `destination-chain` 
 
