@@ -43,7 +43,7 @@ For each example, enter:
 
 - `local` or `testnet` (for both the test and the deploy steps) 
 
-\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? If not, what are the criteria for choosing?]
+\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? (If so, I could enter for them and point out to use testnet only for transactions.) If not, what are the criteria for choosing?]
 
 - `source-chain` and `destination-chain` 
 
