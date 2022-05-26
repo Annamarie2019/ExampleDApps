@@ -67,7 +67,7 @@ For each example, enter `local` or `testnet` (for both the test and the deploy s
 
 `node scripts/test examples/deposit-address [<local|testnet>] ${source-chain} ${destination-chain} ${amount}`
 
-`Deposit-address` is a transaction. There is no smart contract to deploy.
+`Deposit-address` is a simple send transaction. There is no smart contract to deploy.
 
 ### Headers
 
@@ -121,7 +121,7 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 2. To run on testnet, fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC and replace local with testnet. 
 
-`Send-token` is a transaction. There is no smart contract to deploy.
+`Send-token` is a simple send transaction. There is no smart contract to deploy.
 
 ## Conclusion
 
