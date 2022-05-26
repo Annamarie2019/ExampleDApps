@@ -43,7 +43,7 @@ For each example, enter:
 
 - `local` or `testnet` (for both the test and the deploy steps) 
 
-\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? If not, what are the criteria?]
+\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? If not, what are the criteria for choosing?]
 
 - `source-chain` and `destination-chain` 
 
@@ -51,7 +51,7 @@ For each example, enter:
 
 - variables such as `message`, `amount`, and `account` 
 
-- \[Editor: What is the expected syntax: message: "message", amount: whole numbers, account: how are accounts identified?]
+- \[Editor: What is the expected syntax: message: "message"?, amount: whole numbers?, account: how are accounts identified..."string of numbers"?]
 
 and run the test and deploy.
 
