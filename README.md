@@ -43,15 +43,17 @@ For each example, enter:
 
 - `local` or `testnet` (for both the test and the deploy steps) 
 
-\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? (If so, I could enter for them and point out to use testnet only for transactions.) If not, what are the criteria for choosing?]
+\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? (If so, I could enter for them and point out to use testnet only for transactions.) If not, what are the criteria for choosing? Is there a default?]
 
 - `source-chain` and `destination-chain` 
 
-\[Editor: Such as? What's the correct way to identify each? Explained somewhere?]
+\[Editor: Such as? What's the correct way to identify each? Explained somewhere? What are the defaults?]
 
 - variables such as `message`, `amount`, and `account` 
 
-\[Editor: What is the expected syntax: message: "message"?, amount: whole numbers?, account: how are accounts identified..."string of numbers"?]
+\[Editor: What is the expected syntax: message: "message"?, amount: whole numbers?, account: how are accounts identified..."string of numbers"? What are the defaults?]
+
+\[Editor: In regard to this phrase: "All params are optional and have default values and can be ommited." How can you relay a message without a message, source, or destination? These must be required. I think the writer means it in the sense that it's optional for the user to enter a value bc there are defaults. In API, the convention is to call variables with default values "required". Please confirm and I'll find a way to reword this.]
 
 and run the test and deploy.
 
