@@ -22,15 +22,15 @@ Note: You may see example folders in this repo that are not described below. The
 
 4. To make sure all contracts are compiled, run `npm run build`.
 
-5. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps. 
+5. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps.
 
-6. To make sure that the address we use for examples is funded on all five supported testnets: 
+The five supported networks are deployed: Moonbeam (ChainID: 2500), Avalanche (chainID: 2501), Fantom (chainID: 2502), Ethereum (chainID: 2503), and Polygon (chainID: 2504) on port 8500. 
 
-\[Editor: What are the five supported testnets? Will that be clear when I get the above running?]
+6. To make sure that the address we use for examples is funded on all five supported testnets:
 
    a. Run `node/printBalances`. 
 
-\[Editor: Suspicious syntax. Do you mean `node scripts/checkBalances`? If not, what?]
+\[Editor: Suspicious syntax. Do you mean `node scripts/checkBalances`? If not, what? I tried node/printBalances, node printBalances, node scripts/checkBalances... all with errors (I saved image)]
 
    b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
@@ -46,7 +46,7 @@ For each example, enter:
 
 - variables such as `message`, `amount`, and `account` 
 
-\[Editor: What is the expected syntax and data type: message: "message"?, amount: whole numbers?, account: string? What are the defaults for each?]
+\[Editor: What is the expected syntax and data type: message: "message"?, amount: integers?, account: "string"? integers? What are the defaults for each?]
 
 \[Editor: In regard to this phrase: "All params are optional and have default values and can be ommited." How can you relay a message without a message, source, or destination? These must be required. I think the writer means it in the sense that it's optional for the user to enter a value bc there are defaults. In API, the convention is to call variables with default values "required". Please confirm and I'll find a way to reword this.]
 
