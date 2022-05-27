@@ -46,9 +46,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 For each example, enter:
 
-- `local` or `testnet` (for both the test and the deploy steps) 
-
-\[Editor: Should they run local for everything, except `deposit-address` and `send-token`? (If so, I could enter for them and point out to use testnet only for transactions.) If not, what are the criteria for choosing? Is there a default?]
+- `local` or `testnet` for both the test and the deploy steps, except for deposit-address and send-token, which you run on testnet.
 
 - `source-chain` and `destination-chain` 
 
@@ -56,7 +54,7 @@ For each example, enter:
 
 - variables such as `message`, `amount`, and `account` 
 
-\[Editor: What is the expected syntax: message: "message"?, amount: whole numbers?, account: how are accounts identified..."string of numbers"? What are the defaults?]
+\[Editor: What is the expected syntax and data type: message: "message"?, amount: whole numbers?, account: string? What are the defaults?]
 
 \[Editor: In regard to this phrase: "All params are optional and have default values and can be ommited." How can you relay a message without a message, source, or destination? These must be required. I think the writer means it in the sense that it's optional for the user to enter a value bc there are defaults. In API, the convention is to call variables with default values "required". Please confirm and I'll find a way to reword this.]
 
