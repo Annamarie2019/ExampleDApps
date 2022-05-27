@@ -5,9 +5,7 @@
 This repo provides the code for several example dapps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the smart contract code (.sol files) for each example. To try them out:
 
 - Set up your system.
-- Deploy each example to your emulated EVM chains and test them locally. 
-
-\[Editor: I see from the Getting started that they are deploying virtually first, so I just changed the steps around. Correct?]
+- Deploy the dapps with smart contracts and test all of them.
 
 Note: You may see example folders in this repo that are not described below. They are either placeholders for future apps, such as the `temp` folder, or they are dapps in progress and we'll add a description when they're finished.
 
@@ -26,11 +24,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps. 
 
-\[Editor: 
-
-- Do I have the introductory phrase above right ("To run a local node"): we're establishing the user as a node and running a daemon in the background, yes? 
-
-- When I run this code, I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scripts/createLocal`), I get "Cannot find @axelar-network/axelar-local-dev module" error]
+\[Editor: When I run this code, I get "Cannot find @axelar-network/axelar-local-dev module" error.]
 
 5. To make sure that the address we use for examples is funded on all five supported testnets: 
 
@@ -46,7 +40,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 For each example, enter:
 
-- `local` or `testnet` for both the test and the deploy steps, except for deposit-address and send-token, which you run on testnet.
+- `local` or `testnet` for both the test and the deploy steps, except for deposit-address and send-token, which run on testnet.
 
 - `source-chain` and `destination-chain` 
 
@@ -54,7 +48,7 @@ For each example, enter:
 
 - variables such as `message`, `amount`, and `account` 
 
-\[Editor: What is the expected syntax and data type: message: "message"?, amount: whole numbers?, account: string? What are the defaults?]
+\[Editor: What is the expected syntax and data type: message: "message"?, amount: whole numbers?, account: string? What are the defaults for each?]
 
 \[Editor: In regard to this phrase: "All params are optional and have default values and can be ommited." How can you relay a message without a message, source, or destination? These must be required. I think the writer means it in the sense that it's optional for the user to enter a value bc there are defaults. In API, the convention is to call variables with default values "required". Please confirm and I'll find a way to reword this.]
 
