@@ -64,11 +64,13 @@ and run the test and deploy.
 
 ### Call contract
 
+This dApp relays a message from source-chain to destination-chain.
+
 1. To deploy the dApp, run::
 
 `node scripts/deploy examples/call-contract [<local|testnet>]`
 
-2. To relay a message from source-chain to destination-chain, run:
+2. To test it, run:
 
 `node scripts/test examples/call-contract [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
@@ -78,45 +80,55 @@ and run the test and deploy.
 
 ### Call contract with token
 
+This dApp sends aUSDC from source-chain to destination-chain and distributes it equally among all accounts specified.
+
 1. To deploy the dApp, run:
 
 `node scripts/deploy examples/call-contract-with-token [<local|testnet>]`
 
-2. To send aUSDC from source-chain to destination-chain and distribute it equally among all accounts specified, run:
+2. To test it, run:
 
 `node scripts/test examples/call-contract-with-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>] [<account>] [<account2>]...`
 
 ### Cross chain token
 
+This dApp mints some token at source-chain and has it sent to destination-chain.
+
 1. To deploy the dApp, run:
 
 `node scripts/deploy examples/cross-chain-token [<local|testnet>]`
 
-2. To mint some token at source-chain and have it sent to destination-chain, run:
+2. To test it, run:
 
 `node scripts/test examples/cross-chain-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
 
 ### Deposit address
 
-1. To run on testnet, fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC and replace local with testnet.
+This dApp sends aUSDC from source-chain to destination-chain. Run it on testnet. To test it:
 
-2. To send aUSDC from the source to the destination, run:
+1. Fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC.
 
-`node scripts/test examples/deposit-address [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
+2. Run:
 
-`Deposit-address` is a simple send transaction. There is no smart contract to deploy.
+`node scripts/test examples/deposit-address [<testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
+
+Deposit-address is a simple send transaction. There is no smart contract to deploy.
 
 ### Headers
+
+This dApp informs destination-chain of the last header of source-chain.
 
 1. To deploy the dApp, run:
 
 `node scripts/deploy examples/headers [<local|testnet>]`
 
-2. To inform destination-chain of the last header of source-chain, run:
+2. To test it, run:
 
 `node scripts/test examples/headers [<local|testnet>] [<source-chain>] [<destination-chain>]`
 
 ### NFT linker
+
+This dApp sends the NFT that was originally minted at source-chain to destination-chain.
 
 1. To deploy the dApp, run:
 
@@ -124,7 +136,7 @@ and run the test and deploy.
 
 A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`) on each chain.
 
-2. To send the NFT that was originally minted at source-chain to destination-chain, run:
+2. To test it, run:
 
 `node scripts/test examples/nft-linker [<local|testnet>] [<source-chain>] [<destination-chain>]`
 
@@ -132,33 +144,39 @@ You cannot send a duplicate NFT to a chain. The dApp fails when the NFT is alrea
 
 ### Nonced execution
 
+This dApp sends a message from source-chain to destination-chain.
+
 1. To deploy the dApp, run:
 
 `node scripts/deploy examples/nonced-execution [<local|testnet>]`
  
-2. To send a message from source-chain to destination-chain, run: 
+2. To test it, run: 
 
 `node scripts/test examples/nonced-execution [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
 ### Send ack
 
+This dApp sends a message from source-chain to destination-chain.
+
 1. To deploy the dApp, run:
 
 `node scripts/deploy examples/send-ack [<local|testnet>]`
 
-2. To send a message from source-chain to destination-chain, run:
+2. To tst it, run:
 
 `node scripts/test examples/send-ack [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
 ### Send token
 
-1. To send aUSDC from the source to the destination, run:
+This dApp sends aUSDC from the source to the destination. Run it on testnet. To test it:
+
+1. Fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC.
+
+2. Run:
  
-`node scripts/test examples/send-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]` 
+`node scripts/test examples/send-token [<testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
 
-2. To run on testnet, fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC and replace local with testnet. 
-
-`Send-token` is a simple send transaction. There is no smart contract to deploy.
+Send-token is a simple send transaction. There is no smart contract to deploy.
 
 ## Conclusion
 
