@@ -24,7 +24,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps. 
 
-\[Editor: When I run this code, I get "Cannot find @axelar-network/axelar-local-dev module" error. Do I have to run `npm install axelarnetwork/axelar-local-dev` before this step?]
+\[Editor: When I run this code, I get "Cannot find @axelar-network/axelar-local-dev module" error. Do I have to run `npm install axelarnetwork/axelar-local-dev` before this step? Will try Thursday.]
 
 5. To make sure that the address we use for examples is funded on all five supported testnets: 
 
@@ -44,7 +44,7 @@ For each example, enter:
 
 - `source-chain` and `destination-chain` 
 
-\[Editor: Such as? What's the correct way to identify each? Explained somewhere? What are the defaults?]
+\[Editor: Such as? What's the correct way to identify each? Strings? Explained somewhere? What are the defaults?]
 
 - variables such as `message`, `amount`, and `account` 
 
