@@ -18,15 +18,13 @@ Note: You may see example folders in this repo that are not described below. The
 
 \[Editor: Admittedly, the above could get old if it was repeated ad infinitum, but maybe it could be stated somewhere early in the doc.]
 
-3. To make sure all contracts are compiled, run `npm run build`. 
+3. To connect to the axelar network, run `npm install axelarnetwork/axelar-local-dev`.
 
-\[Editor: I get "rm -rf build && waffle....sh: waffle command not found"]
+4. To make sure all contracts are compiled, run `npm run build`.
 
-4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps. 
+5. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps. 
 
-\[Editor: When I run this code, I get "Cannot find @axelar-network/axelar-local-dev module" error. Do I have to run `npm install axelarnetwork/axelar-local-dev` before this step? Will try Thursday.]
-
-5. To make sure that the address we use for examples is funded on all five supported testnets: 
+6. To make sure that the address we use for examples is funded on all five supported testnets: 
 
 \[Editor: What are the five supported testnets? Will that be clear when I get the above running?]
 
