@@ -24,13 +24,14 @@ Note: You may see example folders in this repo that are not described below. The
 
 5. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps.
 
-The five supported networks are deployed: Moonbeam (ChainID: 2500), Avalanche (chainID: 2501), Fantom (chainID: 2502), Ethereum (chainID: 2503), and Polygon (chainID: 2504) on port 8500. 
+   The five supported networks are deployed: Moonbeam (ChainID: 2500), Avalanche (chainID: 2501), Fantom (chainID: 2502), Ethereum (chainID: 2503),
+   and Polygon (chainID: 2504) on port 8500. 
 
 6. To make sure that the address we use for examples is funded on all five supported testnets:
 
    a. Run `node/printBalances`. 
 
-\[Editor: Suspicious syntax. Do you mean `node scripts/checkBalances`? If not, what? I tried node/printBalances, node printBalances, node scripts/checkBalances... all with errors (I saved image)]
+\[Editor: Suspicious syntax. Do you mean `node scripts/checkBalances`? If not, what? Is this shorthand for a commonly used longer command? I tried `node/printBalances` (Error: "No such file or directory"), `node printBalances` (Error: "Module not found"), `node scripts/checkBalances --address 0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` (Error: "Could not detect network"...even though "serving 5 networks on port 8500....on separate terminal window...I saved images).]
 
    b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
