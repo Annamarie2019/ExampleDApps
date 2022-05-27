@@ -23,7 +23,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 \[Editor: 
 
-- Do I have the introductory phrase above right: we're establishing the user as a node and running a daemon in the background, yes? 
+- Do I have the introductory phrase above right ("To run a local node"): we're establishing the user as a node and running a daemon in the background, yes? 
 
 - When I run this code, I get "Cannot find module" error. When I add axelar-local-gmp-examples to the path (i.e., run: `node axelar-local-gmp-examples/scripts/createLocal`), I get "Cannot find @axelar-network/axelar-local-dev module" error]
 
