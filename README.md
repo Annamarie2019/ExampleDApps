@@ -22,7 +22,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 3. To make sure all contracts are compiled, run `npm run build`. 
 
-\[Editor: I get "sh: waffle command not found"]
+\[Editor: I get "rm -rf build && waffle....sh: waffle command not found"]
 
 4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. 
 
