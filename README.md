@@ -14,7 +14,7 @@ Note: You may see example folders in this repo that are not described below. The
 1. You'll need to have node.js installed to run network dApps. To make sure you have it installed, run `node -v`. If no version is returned, run
 `npm update && npm install`.
 
-2. To clone this repo, run `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git`. 
+2. Clone the repo: `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git` and `cd axelar-local-gmp-examples`. 
 3. To make sure all contracts are compiled, run `npm run build`. 
 
 \[Editor: I get "Missing script 'build' " error]
