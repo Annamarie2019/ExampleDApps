@@ -39,7 +39,7 @@ For each example, enter:
 
 - `source-chain` and `destination-chain` 
 
-\[Editor: What's the correct way to identify each? by chain-ID as a "string" or integer?]
+\[Editor: What's the correct way to identify each? by chain-ID? as a "string" or integer?]
 
 - variables such as `message`, `amount`, and `account` 
 
