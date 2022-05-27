@@ -5,7 +5,9 @@
 This repo provides the code for several example dApps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the smart contract code (.sol files) for each example. To try them out:
 
 - Set up your system.
-- Test and deploy each example.
+- Deploy each example to your emulated EVM chains and test them locally. 
+
+\[Editor: I see from the Getting started that they are deploying virtually first, so I just changed the steps around. Correct?]
 
 Note: You may see example folders in this repo that are not described below. They are either placeholders for future apps, such as the `temp` folder, or they are dApps in progress and we'll add a description when they're finished.
 
@@ -15,6 +17,9 @@ Note: You may see example folders in this repo that are not described below. The
 `npm update && npm install`.
 
 2. Clone the repo with `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git` and `cd axelar-local-gmp-examples`. 
+
+\[Editor: Admittedly, the above could get old if it was repeated ad infinitum, but maybe it could be stated somewhere early in the doc.]
+
 3. To make sure all contracts are compiled, run `npm run build`. 
 
 \[Editor: I get "sh: waffle command not found"]
@@ -37,7 +42,7 @@ Note: You may see example folders in this repo that are not described below. The
 
    b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
-## Test and deploy each example
+## Deploy and test each example
 
 For each example, enter:
 
@@ -59,37 +64,37 @@ and run the test and deploy.
 
 ### Call contract
 
-1. To relay a message from source-chain to destination-chain, run:
-
-`node scripts/test examples/call-contract [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
-
-2. To share your code cross-chain, run `yarn call-contract`. 
-
-\[Editor: Is that the right characterizzation of what `yarn` is doing? If not, what is it doing and why don't we need one for any of the others? End of questions.]
-
-3. To deploy the dApp, run::
+1. To deploy the dApp, run::
 
 `node scripts/deploy examples/call-contract [<local|testnet>]`
 
+2. To relay a message from source-chain to destination-chain, run:
+
+`node scripts/test examples/call-contract [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
+
+3. To share your code cross-chain, run `yarn call-contract`. 
+
+\[Editor: Is that the right characterizzation of what `yarn` is doing? If not, what is it doing and why don't we need one for any of the others? End of questions.]
+
 ### Call contract with token
 
-1. To send aUSDC from source-chain to destination-chain and distribute it equally among all accounts specified, run:
-
-`node scripts/test examples/call-contract-with-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>] [<account>] [<account2>]...`
-
-2. To deploy the dApp, run:
+1. To deploy the dApp, run:
 
 `node scripts/deploy examples/call-contract-with-token [<local|testnet>]`
 
+2. To send aUSDC from source-chain to destination-chain and distribute it equally among all accounts specified, run:
+
+`node scripts/test examples/call-contract-with-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>] [<account>] [<account2>]...`
+
 ### Cross chain token
 
-1. To mint some token at source-chain and have it sent to destination-chain, run:
-
-`node scripts/test examples/cross-chain-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
-
-2. To deploy the dApp, run:
+1. To deploy the dApp, run:
 
 `node scripts/deploy examples/cross-chain-token [<local|testnet>]`
+
+2. To mint some token at source-chain and have it sent to destination-chain, run:
+
+`node scripts/test examples/cross-chain-token [<local|testnet>] [<source-chain>] [<destination-chain>] [<amount>]`
 
 ### Deposit address
 
@@ -103,47 +108,47 @@ and run the test and deploy.
 
 ### Headers
 
-1. To inform destination-chain of the last header of source-chain, run:
-
-`node scripts/test examples/headers [<local|testnet>] [<source-chain>] [<destination-chain>]`
-
-2. To deploy the dApp, run:
+1. To deploy the dApp, run:
 
 `node scripts/deploy examples/headers [<local|testnet>]`
 
+2. To inform destination-chain of the last header of source-chain, run:
+
+`node scripts/test examples/headers [<local|testnet>] [<source-chain>] [<destination-chain>]`
+
 ### NFT linker
 
-1. To send the NFT that was originally minted at source-chain to destination-chain, run:
-
-`node scripts/test examples/nft-linker [<local|testnet>] [<source-chain>] [<destination-chain>]`
-
-You cannot send a duplicate NFT to a chain. The dApp fails when the NFT is already at the destination-chain.
-
-2. To deploy the dApp, run:
+1. To deploy the dApp, run:
 
 `node scripts/deploy examples/nft-linker [<local|testnet>]`
 
 A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`) on each chain.
 
+2. To send the NFT that was originally minted at source-chain to destination-chain, run:
+
+`node scripts/test examples/nft-linker [<local|testnet>] [<source-chain>] [<destination-chain>]`
+
+You cannot send a duplicate NFT to a chain. The dApp fails when the NFT is already at the destination-chain.
+
 ### Nonced execution
 
-1. To send a message from source-chain to destination-chain, run: 
+1. To deploy the dApp, run:
+
+`node scripts/deploy examples/nonced-execution [<local|testnet>]`
+ 
+2. To send a message from source-chain to destination-chain, run: 
 
 `node scripts/test examples/nonced-execution [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
-2. To deploy the dApp, run:
-
-`node scripts/deploy examples/nonced-execution [<local|testnet>]`
-
 ### Send ack
 
-1. To send a message from source-chain to destination-chain, run:
-
-`node scripts/test examples/send-ack [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
-
-2. To deploy the dApp, run:
+1. To deploy the dApp, run:
 
 `node scripts/deploy examples/send-ack [<local|testnet>]`
+
+2. To send a message from source-chain to destination-chain, run:
+
+`node scripts/test examples/send-ack [<local|testnet>] [<source-chain>] [<destination-chain>] [<message>]`
 
 ### Send token
 
