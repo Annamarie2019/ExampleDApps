@@ -1,19 +1,19 @@
-# Axelar Local Development Example dApps
+# Axelar cross-chain dapp examples
 
 ## Introduction
 
-This repo provides the code for several example dApps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the smart contract code (.sol files) for each example. To try them out:
+This repo provides the code for several example dapps in the [Axelar Local Development Environment](https://github.com/axelarnetwork/axelar-local-dev). It contains both the JavaScript and the smart contract code (.sol files) for each example. To try them out:
 
 - Set up your system.
 - Deploy each example to your emulated EVM chains and test them locally. 
 
 \[Editor: I see from the Getting started that they are deploying virtually first, so I just changed the steps around. Correct?]
 
-Note: You may see example folders in this repo that are not described below. They are either placeholders for future apps, such as the `temp` folder, or they are dApps in progress and we'll add a description when they're finished.
+Note: You may see example folders in this repo that are not described below. They are either placeholders for future apps, such as the `temp` folder, or they are dapps in progress and we'll add a description when they're finished.
 
 ## Setup
 
-1. You'll need to have node.js installed to run network dApps. To make sure you have it installed, run `node -v`. If no version is returned, run
+1. You'll need to have node.js installed to run network dapps. To make sure you have it installed, run `node -v`. If no version is returned, run
 `npm update && npm install`.
 
 2. Clone the repo with `git clone https://github.com/axelarnetwork/axelar-local-gmp-examples.git` and `cd axelar-local-gmp-examples`. 
@@ -24,7 +24,7 @@ Note: You may see example folders in this repo that are not described below. The
 
 \[Editor: I get "rm -rf build && waffle....sh: waffle command not found"]
 
-4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dApps. 
+4. To run a local node, open a separate terminal and run `node scripts/createLocal`. You’ll need to have this node running to deploy the dapps. 
 
 \[Editor: 
 
@@ -62,9 +62,9 @@ and run the test and deploy.
 
 ### Call contract
 
-This dApp relays a message from source-chain to destination-chain.
+This dapp relays a message from source-chain to destination-chain.
 
-1. To deploy the dApp, run::
+1. To deploy the dapp, run::
 
 `node scripts/deploy examples/call-contract [<local|testnet>]`
 
@@ -78,9 +78,9 @@ This dApp relays a message from source-chain to destination-chain.
 
 ### Call contract with token
 
-This dApp sends aUSDC from source-chain to destination-chain and distributes it equally among all accounts specified.
+This dapp sends aUSDC from source-chain to destination-chain and distributes it equally among all accounts specified.
 
-1. To deploy the dApp, run:
+1. To deploy the dapp, run:
 
 `node scripts/deploy examples/call-contract-with-token [<local|testnet>]`
 
@@ -90,9 +90,9 @@ This dApp sends aUSDC from source-chain to destination-chain and distributes it 
 
 ### Cross chain token
 
-This dApp mints some token at source-chain and has it sent to destination-chain.
+This dapp mints some token at source-chain and has it sent to destination-chain.
 
-1. To deploy the dApp, run:
+1. To deploy the dapp, run:
 
 `node scripts/deploy examples/cross-chain-token [<local|testnet>]`
 
@@ -102,7 +102,7 @@ This dApp mints some token at source-chain and has it sent to destination-chain.
 
 ### Deposit address
 
-This dApp sends aUSDC from source-chain to destination-chain. Run it on testnet. To test it:
+This dapp sends aUSDC from source-chain to destination-chain. Run it on testnet. To test it:
 
 1. Fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC.
 
@@ -114,9 +114,9 @@ Deposit-address is a simple send transaction. There is no smart contract to depl
 
 ### Headers
 
-This dApp informs destination-chain of the last header of source-chain.
+This dapp informs destination-chain of the last header of source-chain.
 
-1. To deploy the dApp, run:
+1. To deploy the dapp, run:
 
 `node scripts/deploy examples/headers [<local|testnet>]`
 
@@ -126,9 +126,9 @@ This dApp informs destination-chain of the last header of source-chain.
 
 ### NFT linker
 
-This dApp sends the NFT that was originally minted at source-chain to destination-chain.
+This dapp sends the NFT that was originally minted at source-chain to destination-chain.
 
-1. To deploy the dApp, run:
+1. To deploy the dapp, run:
 
 `node scripts/deploy examples/nft-linker [<local|testnet>]`
 
@@ -138,13 +138,13 @@ A single NFT is minted to the deployer (`0xBa86A5719722B02a5D5e388999C25f3333c7A
 
 `node scripts/test examples/nft-linker [<local|testnet>] [<source-chain>] [<destination-chain>]`
 
-You cannot send a duplicate NFT to a chain. The dApp fails when the NFT is already at the destination-chain.
+You cannot send a duplicate NFT to a chain. The dapp fails when the NFT is already at the destination-chain.
 
 ### Nonced execution
 
-This dApp sends a message from source-chain to destination-chain.
+This dapp sends a message from source-chain to destination-chain.
 
-1. To deploy the dApp, run:
+1. To deploy the dapp, run:
 
 `node scripts/deploy examples/nonced-execution [<local|testnet>]`
  
@@ -154,9 +154,9 @@ This dApp sends a message from source-chain to destination-chain.
 
 ### Send ack
 
-This dApp sends a message from source-chain to destination-chain.
+This dapp sends a message from source-chain to destination-chain.
 
-1. To deploy the dApp, run:
+1. To deploy the dapp, run:
 
 `node scripts/deploy examples/send-ack [<local|testnet>]`
 
@@ -166,7 +166,7 @@ This dApp sends a message from source-chain to destination-chain.
 
 ### Send token
 
-This dApp sends aUSDC from the source to the destination. Run it on testnet. To test it:
+This dapp sends aUSDC from the source to the destination. Run it on testnet. To test it:
 
 1. Fund `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` with aUSDC.
 
