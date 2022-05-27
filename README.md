@@ -27,13 +27,9 @@ Note: You may see example folders in this repo that are not described below. The
    The five supported networks are deployed: Moonbeam (ChainID: 2500), Avalanche (chainID: 2501), Fantom (chainID: 2502), Ethereum (chainID: 2503),
    and Polygon (chainID: 2504) on port 8500. 
 
-6. To make sure that the address we use for examples is funded on all five supported testnets:
-
-   a. Run `node/printBalances`. 
+6. To make sure that the address we use for examples is funded on all five supported testnets, run `node/printBalances`. We use `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` to deploy and test all examples. Alternatively, you can use `--address [<address>]` to specify another address.
 
 \[Editor: Suspicious syntax. Do you mean `node scripts/checkBalances`? If not, what? Is this shorthand for a commonly used longer command? I tried `node/printBalances` (Error: "No such file or directory"), `node printBalances` (Error: "Module not found"), `node scripts/checkBalances --address 0xBa86A5719722B02a5D5e388999C25f3333c7A9fb` (Error: "Could not detect network"...even though "serving 5 networks on port 8500....on separate terminal window...I saved images).]
-
-   b. Look for `0xBa86A5719722B02a5D5e388999C25f3333c7A9fb`, the address we use to deploy and run all examples.
 
 ## Deploy and test each example
 
@@ -43,7 +39,7 @@ For each example, enter:
 
 - `source-chain` and `destination-chain` 
 
-\[Editor: Such as? What's the correct way to identify each? Strings? Explained somewhere? What are the defaults?]
+\[Editor: What's the correct way to identify each? by chain-ID as a "string" or integer?]
 
 - variables such as `message`, `amount`, and `account` 
 
